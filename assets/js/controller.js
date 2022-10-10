@@ -21,6 +21,7 @@ $(document).ready(function() {
 	const energyProgress 		= $("#energy-progress");
 	const accumulatorProgress 	= $("#acc-progress");
 	const accumulatorBtn 		= $("#acc-btn");
+	const nuke 					= $("#nuke");
 
 	function save() {
 		localStorage.setItem("saveData", JSON.stringify(gameState));
@@ -64,6 +65,10 @@ $(document).ready(function() {
 		update();
 	});
 
+	nuke.click(function() {
+		delete localStorage.saveData;
+		location.reload();
+	})
 
 
 

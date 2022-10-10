@@ -49,4 +49,9 @@ body {
 .progress-fill {
   height: 100%;
 }
+
+#nuke {
+  float: right;
+  margin-left: auto;
+}
 /*# sourceMappingURL=styles.css.map */
