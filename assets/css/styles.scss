@@ -3,3 +3,33 @@
 	margin: 0;
 }
 
+body {
+	display: flex;
+	flex-direction: row;
+}
+
+#energy-progress {
+	background-color: yellow;
+}
+
+#acc-progress {
+	background-color: red;
+}
+
+.energy {
+	display: flex;
+	flex-direction: column;
+	* {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.progress-border {
+	width: 200px;
+	border: 1px solid black;
+}
+
+.progress-fill {
+	height: 100%;
+}

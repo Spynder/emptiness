@@ -2,4 +2,51 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#energy-progress {
+  background-color: yellow;
+}
+
+#acc-progress {
+  background-color: red;
+}
+
+.energy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.energy * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.progress-border {
+  width: 200px;
+  border: 1px solid black;
+}
+
+.progress-fill {
+  height: 100%;
+}
 /*# sourceMappingURL=styles.css.map */
